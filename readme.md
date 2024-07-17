@@ -59,7 +59,7 @@ This will create a 100 KB file named `input.txt`.
 - `huffman.cpp`: Implementation of Huffman coding algorithm
 - `compress.cpp`: File compression function
 - `decompress.cpp`: File decompression function
-- `create_test_file`: File creation function for testing if required
+- `create_test_file.py`: File creation function for testing if required
 
 ## Contributing
 Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/Zahidmohd/File-Zipper/issues) if you want to contribute.
