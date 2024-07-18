@@ -12,6 +12,7 @@ This project implements a file compression and decompression tool using the Huff
 ## Requirements
 - C++ compiler (C++11 or later)
 - Standard C++ libraries
+- Standard Python libraries
 
 ## Installation
 1. Clone the repository: 
