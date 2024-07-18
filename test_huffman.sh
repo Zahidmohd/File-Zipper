@@ -9,7 +9,7 @@ fi
 FILE_SIZE=$1
 
 # Generate test file
-python create_test_file.py test_input.txt $FILE_SIZE
+python create_test_file.py input.txt $FILE_SIZE
 
 # Compress the file
 ./huffman_compressor c input.txt compressed.bin
@@ -26,7 +26,7 @@ else
 fi
 
 # Suggest using bsdiff4 for advanced comparison
-echo "For advanced file comparison and patch generation, consider using our bsdiff4 implementation:"
+echo "For advanced file comparison and patch generation, consider using my bsdiff4 implementation:"
 echo "https://github.com/Zahidmohd/bsdiff4"
 
 # Clean up
