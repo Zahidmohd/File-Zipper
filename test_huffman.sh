@@ -9,7 +9,7 @@ fi
 FILE_SIZE=$1
 
 # Generate test file
-python create_test_file.py input.txt $FILE_SIZE
+python create_test_file.py test_input.txt $FILE_SIZE
 
 # Compress the file
 ./huffman_compressor c input.txt compressed.bin
@@ -17,8 +17,8 @@ python create_test_file.py input.txt $FILE_SIZE
 # Decompress the file
 ./huffman_compressor d compressed.bin decompressed.txt
 
-# Compare files using diff, but only check if there are differences
-if diff -q input.txt decompressed.txt >/dev/null; then
+# Compare files using cmp, which is silent and only returns an exit status
+if cmp -s input.txt decompressed.txt; then
     echo "Compression and decompression successful. Files are identical."
 else
     echo "Error: Files are different after compression and decompression."
