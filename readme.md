@@ -17,8 +17,8 @@ This project implements a file compression and decompression tool using the Huff
 ## Installation
 1. Clone the repository: 
 git clone https://github.com/Zahidmohd/File-Zipper.git
-2. Navigate to the project directory: cd foldername(folder in which you have clone it).
-3. Compile the project: g++ -std=c++11 main.cpp huffman.cpp compress.cpp decompress.cpp -o huffman_compressor
+2. Navigate to the project directory: `cd foldername`(folder in which you have clone it).
+3. Compile the project: `g++ -std=c++11 main.cpp huffman.cpp compress.cpp decompress.cpp -o huffman_compressor`
 ## Usage
 - To compress a file: `./huffman_compressor c input.txt compressed.bin`
 - To decompress a file:`./huffman_compressor d compressed.bin decompressed.txt`
@@ -46,7 +46,7 @@ git clone https://github.com/Zahidmohd/File-Zipper.git
 
 
   - ### Generating Test Files
-  1. You can generate test files of any size using the provided Python script: `python create_test_file.py <filename>(take name as "input.txt" as i have code for the same) <size_in_kb>`
+   1. You can generate test files of any size using the provided Python script: `python create_test_file.py <filename>(take name as "input.txt" as i have code for the same) <size_in_kb>`
   2. Example:`python create_test_file.py input.txt 100`  
 This will create a 100 KB file named `input.txt`.
 
@@ -64,8 +64,8 @@ This will create a 100 KB file named `input.txt`.
   - For a more advanced file comparison and patch generation, you can use the bsdiff4 algorithm. Check out my [bsdiff4 repository](https://github.com/Zahidmohd/bsdiff4) for implementation details and usage instructions.
 
   - Using bsdiff4, you can:
-    1.  Generate a patch between the original and compressed files.
-    2.  Apply the patch to verify the integrity of the compression/decompression process.
+    1. Generate a patch between the original and compressed files.
+    2. Apply the patch to verify the integrity of the compression/decompression process.
 
   - This provides an additional layer of verification for the Huffman coding implementation.
 ## How It Works
